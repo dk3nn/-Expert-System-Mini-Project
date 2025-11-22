@@ -1,0 +1,111 @@
+[
+  {
+    "name": "Premium Ultrabook",
+    "if": [
+      "budget_high",
+      "portable",
+      "long_battery"
+    ],
+    "then": "recommend:premium_ultrabook",
+    "priority": 10
+  },
+  {
+    "name": "Budget Ultrabook",
+    "if": [
+      "budget_low",
+      "office_only",
+      "portable"
+    ],
+    "then": "recommend:budget_ultrabook",
+    "priority": 6
+  },
+  {
+    "name": "Midrange gaming laptop",
+    "if": [
+      "gaming",
+      "budget_medium"
+    ],
+    "then": "recommend:midrange_gaming_laptop",
+    "priority": 8
+  },
+  {
+    "name": "High-end Gaming Laptop",
+    "if": [
+      "gaming",
+      "budget_high"
+    ],
+    "then": "recommend:high_end_gaming_laptop",
+    "priority": 10
+  },
+  {
+    "name":"Ultrabook",
+    "if": [
+      "budget_medium",
+      "portable"
+    ],
+    "then": "recommend:ultrabook",
+    "priority": 8
+  },
+  {
+    "name": "Low-end Gaming laptop",
+    "if": [
+      "budget_low",
+      "gaming"
+    ],
+    "then": "recommend:low_end_gaming_laptop",
+    "priority": 6
+  },
+  {
+    "name": "Ram 16 plus",
+    "if": [
+      "creative_work",
+      "portable"
+    ],
+    "then": "spec:ram_16_plus",
+    "priority": 4
+  },
+  {
+    "name": "Display 15 plus color acccurate",
+    "if": [
+      "creative_work",
+      "large_screen"
+    ],
+    "then": "spec:display_15_plus_color_accurate",
+    "priority": 4
+  },
+  {
+    "name": "Battery 60WH plus",
+    "if": [
+      "travel_often",
+      "long_battery"
+    ],
+    "then": "spec:battery_60wh_plus",
+    "priority": 4
+  },
+  {
+    "name": "Mac OS required",
+    "if": [
+      "pref_os_macos"
+    ],
+    "then": "spec:macos_required",
+    "priority": 2
+  },
+  {
+    "name": "GPU with Tensor Cores",
+    "if": [
+      "needs_ai_accel"
+    ],
+    "then": "spec:gpu_with_tensor_chips",
+    "priority": 2
+  },
+  {
+    "name": "Linux Friendly Hardware",
+    "if": [
+      "pref_os_linux",
+      "office_only"
+    ],
+    "then": "spec:linux_friendly_hw",
+    "priority": 4
+  }
+  
+]
